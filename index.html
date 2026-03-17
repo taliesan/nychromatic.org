@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Color is Infrastructure — The New York Chromatic Society</title>
+<meta name="description" content="For 130 years, the New York Chromatic Society has advanced the health, economic vitality, and social well-being of all New Yorkers through the color of the built environment.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Source+Sans+3:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<style>
+.hero{min-height:100vh;display:flex;flex-direction:column;justify-content:center;padding:calc(var(--nav-height)+60px) clamp(24px,6vw,80px) 80px;position:relative;overflow:hidden;}
+.hero::before{content:'';position:absolute;top:-20%;right:-10%;width:60vw;height:60vw;max-width:800px;max-height:800px;background:radial-gradient(ellipse,var(--pink-pale) 0%,transparent 70%);opacity:0.7;pointer-events:none;}
+.hero-content{position:relative;z-index:1;max-width:var(--content-max);margin:0 auto;width:100%;}
+.hero-tag{font-size:12px;font-weight:600;letter-spacing:0.2em;text-transform:uppercase;color:var(--pink);margin-bottom:24px;display:flex;align-items:center;gap:12px;}
+.hero-tag::before{content:'';width:40px;height:2px;background:var(--pink);}
+.hero h1{font-family:var(--font-display);font-size:clamp(42px,6vw,80px);font-weight:400;line-height:1.08;color:var(--black);max-width:900px;margin-bottom:32px;}
+.hero h1 em{font-style:italic;color:var(--pink);}
+.hero-sub{font-family:var(--font-serif);font-size:clamp(18px,2vw,22px);line-height:1.6;color:var(--dark-gray);max-width:600px;margin-bottom:48px;}
+.hero-actions{display:flex;gap:16px;flex-wrap:wrap;}
+.hero-stats{display:flex;gap:clamp(32px,5vw,64px);margin-top:80px;padding-top:40px;border-top:1px solid rgba(0,0,0,0.08);flex-wrap:wrap;}
+.hero-stat-num{font-family:var(--font-display);font-size:clamp(28px,3vw,42px);font-weight:600;color:var(--black);line-height:1.1;}
+.hero-stat-label{font-size:13px;color:var(--mid-gray);font-weight:500;margin-top:4px;}
+.home-init{background:var(--pink-pale);position:relative;overflow:hidden;}
+.home-init::before{content:'';position:absolute;bottom:-10%;left:-5%;width:50vw;height:50vw;background:radial-gradient(ellipse,rgba(232,115,138,0.15) 0%,transparent 60%);}
+.home-init .section-inner{position:relative;z-index:1;}
+</style>
+
+<nav id="mainNav">
+  <a href="index.html" class="nav-logo">
+    <div class="pink-bar"></div>
+    <div class="nav-wordmark">The New York<br>Chromatic Society<span class="est">Est. 1893</span></div>
+  </a>
+  <ul class="nav-links">
+    <li><a href="about.html">About</a></li>
+    <li><a href="programs.html">Programs</a></li>
+    <li><a href="research.html">Research</a></li>
+    <li><a href="team.html">Team</a></li>
+    <li style="margin-left:12px;padding-left:24px;border-left:1px solid rgba(0,0,0,0.1);"><a href="initiative.html" class="nav-campaign">Central Park Pathways Initiative</a></li>
+    <li><a href="support.html" class="nav-cta">Donate</a></li>
+  </ul>
+  <button class="mobile-toggle" aria-label="Menu"><span></span><span></span><span></span></button>
+</nav>
+
+<header class="hero">
+  <div class="hero-content">
+    <div class="hero-tag">Since 1893</div>
+    <h1>Color is <em>infrastructure.</em></h1>
+    <p class="hero-sub">The New York Chromatic Society advances the health, economic vitality, and social well-being of all New Yorkers through research, advocacy, and direct intervention in the color of the built environment.</p>
+    <div class="hero-actions">
+      <a href="initiative.html" class="btn btn-primary">The Central Park Pathways Initiative &rarr;</a>
+      <a href="about.html" class="btn btn-secondary">Our Story</a>
+    </div>
+    <div class="hero-stats">
+      <div><span class="hero-stat-num">131</span><span class="hero-stat-label">Years of research</span></div>
+      <div><span class="hero-stat-num">47</span><span class="hero-stat-label">Color Works projects</span></div>
+      <div><span class="hero-stat-num">5</span><span class="hero-stat-label">Boroughs served</span></div>
+      <div><span class="hero-stat-num">58</span><span class="hero-stat-label">Miles of pink pathways</span></div>
+    </div>
+  </div>
+</header>
+
+<div class="mission-band">
+  <div class="section-inner">
+    <p class="mission-text">&ldquo;We have 130 years of data, three peer-reviewed studies, partnerships with four medical schools, and a theory of change that makes people <em>smile.</em> I&rsquo;ll take that combination over a grim white paper any day.&rdquo;</p>
+    <p class="mission-attr">&mdash; Priya Subramanian, Executive Director</p>
+  </div>
+</div>
+
+<section style="background:var(--off-white);">
+  <div class="section-inner">
+    <div class="section-tag">What We Do</div>
+    <h2 class="section-title">Research. Intervention. Advocacy.</h2>
+    <p class="section-intro">We study the relationship between color and quality of life, transform neighborhoods through community-driven color interventions, and advocate for color-conscious urban policy.</p>
+    <div class="program-grid">
+      <a href="programs.html" class="program-card">
+        <div class="program-icon">🔬</div>
+        <h3>Chromatic Research Lab</h3>
+        <p>Original research on color&rsquo;s impact on health, economic, and social outcomes. Home of the Annual Chromatic Survey and the NYC Color Atlas.</p>
+        <div class="program-stat">131 consecutive years of data</div>
+      </a>
+      <a href="programs.html#colorworks" class="program-card">
+        <div class="program-icon">🎨</div>
+        <h3>Color Works</h3>
+        <p>Community-based color interventions in underserved neighborhoods across all five boroughs. Each project begins with community color selection and integrates outcome measurement.</p>
+        <div class="program-stat">47 projects &middot; All 5 boroughs</div>
+      </a>
+      <a href="programs.html#education" class="program-card">
+        <div class="program-icon">🏫</div>
+        <h3>Education &amp; Public Programs</h3>
+        <p>A free K&ndash;12 curriculum in 83 public schools, walking tours, professional workshops, and the monthly Chromatic Conversations lecture series.</p>
+        <div class="program-stat">83 schools &middot; Open to the public</div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<section class="home-init">
+  <div class="section-inner">
+    <div class="section-tag">Capital Campaign &middot; 2024&ndash;2027</div>
+    <h2 class="section-title">The Central Park Pathways Initiative</h2>
+    <p class="section-intro">58 miles of pedestrian pathways. One shade of pink. Three years of rigorous, peer-reviewed research. The largest color intervention study ever attempted.</p>
+    <div class="initiative-numbers">
+      <div class="init-num"><div class="init-num-val">58</div><div class="init-num-label">miles of pathways</div></div>
+      <div class="init-num"><div class="init-num-val">$16M</div><div class="init-num-label">capital campaign</div></div>
+      <div class="init-num"><div class="init-num-val">3</div><div class="init-num-label">year study period</div></div>
+      <div class="init-num"><div class="init-num-val">5,000</div><div class="init-num-label">volunteers needed</div></div>
+    </div>
+    <a href="initiative.html" class="btn btn-primary">Learn About the Initiative &rarr;</a>
+  </div>
+</section>
+
+<div class="quote-band">
+  <blockquote>&ldquo;The built environment is never neutral. Every surface communicates something.&rdquo;</blockquote>
+  <cite>From the Society&rsquo;s charter, 1893</cite>
+</div>
+
+<div class="cta-band">
+  <div class="section-inner">
+    <h2>Help us paint New York <span>pink.</span></h2>
+    <p>The Central Park Pathways Initiative is the most ambitious project in the Society&rsquo;s 131-year history.</p>
+    <div class="cta-actions">
+      <a href="support.html" class="btn btn-primary">Support Our Work</a>
+      <a href="support.html#volunteer" class="btn btn-white">Volunteer</a>
+    </div>
+  </div>
+</div>
+
+<footer>
+  <div class="footer-inner">
+    <div class="footer-top">
+      <div class="footer-about">
+        <div class="nav-wordmark">The New York<br>Chromatic Society<span class="est">Est. 1893</span></div>
+        <p>Advancing the health, economic vitality, and social well-being of all New Yorkers through the color of the built environment.</p>
+        <div class="address">401 Lafayette Street, 4th Floor<br>New York, NY 10003<br>(212) 555-0893<br>info@nychromatic.org</div>
+      </div>
+      <div class="footer-col">
+        <h4>Programs</h4>
+        <a href="programs.html">Chromatic Research Lab</a>
+        <a href="programs.html#colorworks">Color Works</a>
+        <a href="programs.html#fellowship">The Willard Fellowship</a>
+        <a href="programs.html#archive">Archive &amp; Reading Room</a>
+        <a href="programs.html#education">Education</a>
+      </div>
+      <div class="footer-col">
+        <h4>About</h4>
+        <a href="about.html">Our History</a>
+        <a href="about.html#toc">Theory of Change</a>
+        <a href="team.html">Leadership</a>
+        <a href="team.html#board">Board of Directors</a>
+        <a href="research.html#publications">Publications</a>
+      </div>
+      <div class="footer-col">
+        <h4>Get Involved</h4>
+        <a href="support.html">Donate</a>
+        <a href="support.html#volunteer">Volunteer</a>
+        <a href="initiative.html">Central Park Initiative</a>
+        <a href="support.html#corporate">Corporate Partners</a>
+        <a href="support.html#contact">Contact</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; 2026 The New York Chromatic Society. All rights reserved.</span>
+      <span><a href="#">Privacy Policy</a> &middot; <a href="#">Terms</a></span>
+    </div>
+    <div class="footer-disclaimer">The New York Chromatic Society is a fictional organization created for educational purposes as part of <em>How to Raise Money</em> by Geoffrey MacDougall. Any resemblance to actual organizations is coincidental &mdash; although we do think someone should paint Central Park pink.</div>
+  </div>
+</footer>
+<script>
+const n=document.getElementById('mainNav');
+window.addEventListener('scroll',()=>n.classList.toggle('scrolled',window.scrollY>50));
+</script>
+</body>
+</html>
