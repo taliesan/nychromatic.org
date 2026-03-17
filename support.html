@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Support — The New York Chromatic Society</title>
+<meta name="description" content="Help us paint New York pink. Donate, volunteer, partner, or attend the Pink Party.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Source+Sans+3:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav id="mainNav">
+  <a href="index.html" class="nav-logo">
+    <div class="pink-bar"></div>
+    <div class="nav-wordmark">The New York<br>Chromatic Society<span class="est">Est. 1893</span></div>
+  </a>
+  <ul class="nav-links">
+    <li><a href="about.html">About</a></li>
+    <li><a href="programs.html">Programs</a></li>
+    <li><a href="research.html">Research</a></li>
+    <li><a href="team.html">Team</a></li>
+    <li style="margin-left:12px;padding-left:24px;border-left:1px solid rgba(0,0,0,0.1);"><a href="initiative.html" class="nav-campaign">Central Park Pathways Initiative</a></li>
+    <li><a href="support.html" class="nav-cta">Donate</a></li>
+  </ul>
+  <button class="mobile-toggle" aria-label="Menu"><span></span><span></span><span></span></button>
+</nav>
+
+<div class="page-hero">
+  <div class="section-inner">
+    <div class="section-tag">Support</div>
+    <h2 class="section-title">Help us paint New York pink.</h2>
+    <p class="section-intro">The Central Park Pathways Initiative is the most ambitious project in the Society&rsquo;s 131-year history. There are many ways to be part of it.</p>
+  </div>
+</div>
+
+<section>
+  <div class="section-inner">
+    <div class="two-col">
+      <div class="support-ways">
+        <h4>Individual Giving</h4>
+        <p>Gifts of any size power our work. Major gifts ($10,000+) to the Central Park Pathways capital campaign include recognition at the Pink Party gala and naming opportunities within the project. Planned giving options &mdash; including charitable gift annuities and bequests &mdash; are available through the development office.</p>
+
+        <h4>Foundation &amp; Institutional Partners</h4>
+        <p>We welcome foundation support for research, community programs, and the capital campaign. Current funders include the New York Community Trust, the Robert Wood Johnson Foundation, the Surdna Foundation, Bloomberg Philanthropies, and the National Endowment for the Arts.</p>
+
+        <h4 id="corporate">Corporate Partnerships</h4>
+        <p>Align your brand with one of New York&rsquo;s most distinctive civic organizations. Corporate partnerships include employee volunteer engagement, event sponsorship, co-branded research and programming, and workplace color consultations. Our lead partner Benjamin Moore demonstrates how corporate collaboration advances both mission and business objectives. Contact David Yoon Park, Director of Development, for partnership inquiries.</p>
+
+        <h4 id="volunteer">Volunteer</h4>
+        <p>The Pink Party needs 5,000 volunteers. Color Works projects need painters, community liaisons, and skilled tradespeople. The Annual Chromatic Survey needs trained observers. The walking tour program needs docents. The Archive needs organizing help. There is a role for everyone.</p>
+
+        <h4>Membership</h4>
+        <p>Annual membership starts at $75 and includes invitations to Chromatic Conversations lectures, discounts on walking tours and workshops, the annual report, and early access to Pink Party registration. Sustaining memberships ($250+) include a guided private tour of the Archive.</p>
+      </div>
+
+      <div>
+        <div class="donate-box">
+          <h3>Make a Gift</h3>
+          <p>All donations are tax-deductible. The New York Chromatic Society is a 501(c)(3) organization.</p>
+          <div class="amount-grid">
+            <button class="amount-btn" onclick="document.querySelectorAll('.amount-btn').forEach(b=>b.classList.remove('active'));this.classList.add('active')">$50</button>
+            <button class="amount-btn" onclick="document.querySelectorAll('.amount-btn').forEach(b=>b.classList.remove('active'));this.classList.add('active')">$100</button>
+            <button class="amount-btn active" onclick="document.querySelectorAll('.amount-btn').forEach(b=>b.classList.remove('active'));this.classList.add('active')">$250</button>
+            <button class="amount-btn" onclick="document.querySelectorAll('.amount-btn').forEach(b=>b.classList.remove('active'));this.classList.add('active')">$500</button>
+            <button class="amount-btn" onclick="document.querySelectorAll('.amount-btn').forEach(b=>b.classList.remove('active'));this.classList.add('active')">$1,000</button>
+            <button class="amount-btn" onclick="document.querySelectorAll('.amount-btn').forEach(b=>b.classList.remove('active'));this.classList.add('active')">Other</button>
+          </div>
+          <button class="donate-submit">Donate Now</button>
+          <p class="donate-note">Secure payment processing. You will receive a tax receipt by email.</p>
+        </div>
+
+        <div style="margin-top:40px;padding:32px;background:var(--off-white);border-radius:8px;">
+          <h4 style="font-family:var(--font-display);font-size:18px;font-weight:600;margin-bottom:8px;">Questions?</h4>
+          <p style="font-size:14px;color:var(--dark-gray);line-height:1.55;">Contact the development team at <strong>giving@nychromatic.org</strong> or (212) 555-0893 x204.</p>
+          <p style="font-size:14px;color:var(--dark-gray);line-height:1.55;margin-top:8px;">For corporate partnerships, contact David Yoon Park directly at <strong>dpark@nychromatic.org</strong>.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section style="background:var(--black);color:var(--white);position:relative;overflow:hidden;">
+  <div style="position:absolute;top:0;left:0;right:0;bottom:0;background:radial-gradient(ellipse at 20% 80%,rgba(232,115,138,0.12) 0%,transparent 50%),radial-gradient(ellipse at 80% 20%,rgba(232,115,138,0.08) 0%,transparent 50%);"></div>
+  <div class="section-inner" style="position:relative;z-index:1;text-align:center;">
+    <div style="font-size:13px;font-weight:600;letter-spacing:0.2em;text-transform:uppercase;color:var(--pink-light);margin-bottom:24px;">Summer 2026 &middot; Central Park</div>
+    <h2 style="font-family:var(--font-display);font-size:clamp(40px,6vw,72px);font-weight:700;line-height:1.05;margin-bottom:24px;">The <span style="color:var(--pink);">Pink</span> Party</h2>
+    <p style="font-family:var(--font-serif);font-size:clamp(17px,2vw,20px);line-height:1.6;color:rgba(255,255,255,0.7);max-width:640px;margin:0 auto 48px;">A single extraordinary day to launch the Central Park Pathways Initiative. 5,000 volunteers paint the Central Park Loop at dawn. A free public festival on the Great Lawn by noon. A gala dinner in the Conservatory Garden at dusk.</p>
+
+    <div class="event-schedule">
+      <div class="event-block">
+        <div class="event-block-time">7:00 AM &ndash; 12:00 PM</div>
+        <div class="event-block-name">The Paint</div>
+        <div class="event-block-desc">5,000 pre-registered volunteers paint the first 8 miles of pathways. Corporate teams. Neighborhood groups. Families. Everyone gets a pink t-shirt and a brush.</div>
+      </div>
+      <div class="event-block">
+        <div class="event-block-time">12:00 PM &ndash; 6:00 PM</div>
+        <div class="event-block-name">The Festival</div>
+        <div class="event-block-desc">Free public celebration on the Great Lawn. Live music. Food vendors. Art installations. A Pink Market featuring local makers and designers. Bring the family.</div>
+      </div>
+      <div class="event-block">
+        <div class="event-block-time">7:00 PM &ndash; 10:00 PM</div>
+        <div class="event-block-name">The Gala</div>
+        <div class="event-block-desc">400 guests. Conservatory Garden. Dinner, remarks, and a toast under the lights. $1,000 per guest. Tables of 10 at $25,000.</div>
+      </div>
+    </div>
+
+    <div style="margin-top:48px;">
+      <a href="#volunteer" class="btn btn-primary" style="margin-right:12px;">Volunteer for the Pink Party</a>
+      <a href="#" class="btn btn-white">Gala Tickets &amp; Tables</a>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="section-inner" style="max-width:640px;text-align:center;">
+    <div class="section-tag" style="justify-content:center;">Contact</div>
+    <h2 class="section-title" style="margin:0 auto 16px;">Get in touch.</h2>
+    <p style="font-family:var(--font-serif);font-size:17px;color:var(--dark-gray);line-height:1.7;">The New York Chromatic Society<br>401 Lafayette Street, 4th Floor<br>New York, NY 10003</p>
+    <p style="font-family:var(--font-serif);font-size:17px;color:var(--dark-gray);line-height:1.7;margin-top:16px;">(212) 555-0893<br>info@nychromatic.org</p>
+    <p style="font-size:14px;color:var(--mid-gray);margin-top:24px;">Archive &amp; Reading Room visits by appointment: <strong>archive@nychromatic.org</strong><br>Press inquiries: <strong>press@nychromatic.org</strong><br>Walking tour reservations: <strong>tours@nychromatic.org</strong></p>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-inner">
+    <div class="footer-top">
+      <div class="footer-about">
+        <div class="nav-wordmark">The New York<br>Chromatic Society<span class="est">Est. 1893</span></div>
+        <p>Advancing the health, economic vitality, and social well-being of all New Yorkers through the color of the built environment.</p>
+        <div class="address">401 Lafayette Street, 4th Floor<br>New York, NY 10003<br>(212) 555-0893<br>info@nychromatic.org</div>
+      </div>
+      <div class="footer-col">
+        <h4>Programs</h4>
+        <a href="programs.html">Chromatic Research Lab</a>
+        <a href="programs.html#colorworks">Color Works</a>
+        <a href="programs.html#fellowship">The Willard Fellowship</a>
+        <a href="programs.html#archive">Archive &amp; Reading Room</a>
+        <a href="programs.html#education">Education</a>
+      </div>
+      <div class="footer-col">
+        <h4>About</h4>
+        <a href="about.html">Our History</a>
+        <a href="about.html#toc">Theory of Change</a>
+        <a href="team.html">Leadership</a>
+        <a href="team.html#board">Board of Directors</a>
+        <a href="research.html#publications">Publications</a>
+      </div>
+      <div class="footer-col">
+        <h4>Get Involved</h4>
+        <a href="support.html">Donate</a>
+        <a href="support.html#volunteer">Volunteer</a>
+        <a href="initiative.html">Central Park Initiative</a>
+        <a href="support.html#corporate">Corporate Partners</a>
+        <a href="support.html#contact">Contact</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; 2026 The New York Chromatic Society. All rights reserved.</span>
+      <span><a href="#">Privacy Policy</a> &middot; <a href="#">Terms</a></span>
+    </div>
+    <div class="footer-disclaimer">The New York Chromatic Society is a fictional organization created for educational purposes as part of <em>How to Raise Money</em> by Geoffrey MacDougall. Any resemblance to actual organizations is coincidental &mdash; although we do think someone should paint Central Park pink.</div>
+  </div>
+</footer>
+<script>
+const n=document.getElementById('mainNav');
+window.addEventListener('scroll',()=>n.classList.toggle('scrolled',window.scrollY>50));
+</script>
+</body>
+</html>
