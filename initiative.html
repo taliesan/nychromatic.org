@@ -12,10 +12,12 @@
 </head>
 <body>
 <style>
-.init-hero{background:var(--pink-pale);padding:calc(var(--nav-height) + 120px) clamp(24px,6vw,80px) 80px;position:relative;overflow:hidden;}
+.init-hero{background:var(--pink-pale);padding:calc(var(--nav-height) + 100px) clamp(24px,6vw,80px) 80px;position:relative;overflow:hidden;}
 .init-hero::before{content:'';position:absolute;bottom:-10%;left:-5%;width:50vw;height:50vw;background:radial-gradient(ellipse,rgba(232,115,138,0.15) 0%,transparent 60%);}
 .init-hero .section-inner{position:relative;z-index:1;}
 .init-hero .section-title{font-size:clamp(36px,5vw,64px);}
+.park-map{position:absolute;right:clamp(-40px,4vw,60px);top:50%;transform:translateY(-50%);height:90%;max-height:700px;opacity:0.18;pointer-events:none;z-index:0;}
+@media(max-width:900px){.park-map{opacity:0.1;right:-60px;height:80%;}}
 .campaign-table{width:100%;border-collapse:collapse;margin-top:32px;}
 .campaign-table th{text-align:left;font-size:13px;font-weight:600;letter-spacing:0.05em;text-transform:uppercase;color:var(--mid-gray);padding:12px 0;border-bottom:2px solid var(--black);}
 .campaign-table td{padding:14px 0;border-bottom:1px solid rgba(0,0,0,0.06);font-size:15px;color:var(--dark-gray);}
@@ -40,6 +42,49 @@
 </nav>
 
 <div class="init-hero">
+  <svg class="park-map" viewBox="0 0 280 900" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M40 12 C42 10, 238 8, 240 12 C242 16, 243 280, 241 380 C240 420, 242 500, 240 600 C239 680, 241 780, 240 850 C238 854, 44 856, 40 852 C38 848, 37 780, 39 680 C40 600, 38 500, 40 380 C41 280, 39 100, 40 12Z" fill="#c8dbb8" stroke="#a8c498" stroke-width="1.5"/>
+    <ellipse cx="170" cy="60" rx="45" ry="22" fill="#a8cee0" stroke="#88b0c8" stroke-width="0.8"/>
+    <ellipse cx="140" cy="280" rx="65" ry="45" fill="#a8cee0" stroke="#88b0c8" stroke-width="0.8"/>
+    <path d="M65 490 C70 475, 100 465, 130 470 C160 475, 190 468, 200 480 C210 492, 195 505, 170 510 C145 515, 110 512, 85 505 C60 498, 58 495, 65 490Z" fill="#a8cee0" stroke="#88b0c8" stroke-width="0.8"/>
+    <ellipse cx="130" cy="410" rx="30" ry="14" fill="#a8cee0" stroke="#88b0c8" stroke-width="0.8"/>
+    <ellipse cx="160" cy="800" rx="28" ry="16" fill="#a8cee0" stroke="#88b0c8" stroke-width="0.8"/>
+    <ellipse cx="190" cy="560" rx="18" ry="12" fill="#a8cee0" stroke="#88b0c8" stroke-width="0.8"/>
+    <ellipse cx="140" cy="370" rx="55" ry="30" fill="#b8d0a8" opacity="0.6"/>
+    <ellipse cx="110" cy="670" rx="45" ry="28" fill="#b8d0a8" opacity="0.6"/>
+    <ellipse cx="140" cy="170" rx="50" ry="25" fill="#b8d0a8" opacity="0.5"/>
+    <path d="M55 830 C50 780, 48 720, 50 660 C52 600, 48 540, 50 480 C52 420, 48 350, 52 300 C54 250, 50 180, 55 120 C58 80, 62 45, 80 30 C100 18, 180 16, 200 28 C218 38, 225 60, 228 100 C230 150, 228 220, 226 300 C224 380, 228 460, 226 540 C224 620, 228 700, 225 760 C222 800, 215 835, 200 845 C180 855, 100 856, 75 845 C60 838, 56 835, 55 830Z" stroke="#E8738A" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+    <ellipse cx="140" cy="280" rx="72" ry="52" stroke="#E8738A" stroke-width="3" fill="none" stroke-linecap="round"/>
+    <path d="M50 190 C80 188, 120 192, 160 190 C200 188, 220 191, 230 190" stroke="#E8738A" stroke-width="2.5" stroke-linecap="round"/>
+    <path d="M48 305 C80 303, 130 308, 170 305 C210 302, 225 306, 232 305" stroke="#E8738A" stroke-width="2.5" stroke-linecap="round"/>
+    <path d="M50 430 C80 428, 120 433, 160 430 C200 427, 222 431, 230 430" stroke="#E8738A" stroke-width="2.5" stroke-linecap="round"/>
+    <path d="M48 680 C80 678, 130 683, 170 680 C210 677, 225 681, 232 680" stroke="#E8738A" stroke-width="2.5" stroke-linecap="round"/>
+    <path d="M140 600 C138 620, 142 650, 140 680 C138 710, 141 730, 140 750" stroke="#E8738A" stroke-width="3" stroke-linecap="round"/>
+    <path d="M125 680 L125 750" stroke="#E8738A" stroke-width="2" stroke-linecap="round"/>
+    <path d="M155 680 L155 750" stroke="#E8738A" stroke-width="2" stroke-linecap="round"/>
+    <path d="M80 80 C90 100, 75 130, 85 160 C95 180, 80 200, 90 230" stroke="#E8738A" stroke-width="2.2" stroke-linecap="round"/>
+    <path d="M180 50 C175 80, 185 110, 178 140 C172 170, 182 200, 178 230" stroke="#E8738A" stroke-width="2.2" stroke-linecap="round"/>
+    <path d="M200 400 C205 430, 198 460, 202 490 C206 520, 200 550, 205 580" stroke="#E8738A" stroke-width="2.2" stroke-linecap="round"/>
+    <path d="M210 580 C208 610, 212 640, 210 670" stroke="#E8738A" stroke-width="2.2" stroke-linecap="round"/>
+    <path d="M75 400 C72 430, 78 460, 75 490 C72 520, 76 550, 74 580" stroke="#E8738A" stroke-width="2.2" stroke-linecap="round"/>
+    <path d="M68 600 C72 630, 68 660, 72 690" stroke="#E8738A" stroke-width="2.2" stroke-linecap="round"/>
+    <path d="M60 480 C70 470, 90 462, 120 465 C140 467, 160 462, 180 470 C200 478, 210 490, 205 500 C200 510, 180 515, 160 518 C130 520, 100 516, 80 508 C60 500, 55 492, 60 480Z" stroke="#E8738A" stroke-width="2.2" fill="none" stroke-linecap="round"/>
+    <path d="M85 350 C100 342, 130 338, 160 340 C185 342, 200 348, 205 360 C208 372, 200 385, 180 392 C160 398, 120 400, 95 395 C75 390, 70 378, 75 365 C78 355, 82 352, 85 350Z" stroke="#E8738A" stroke-width="2.2" fill="none" stroke-linecap="round"/>
+    <path d="M100 405 C110 398, 130 395, 150 398 C165 400, 170 408, 160 415" stroke="#E8738A" stroke-width="2" stroke-linecap="round"/>
+    <path d="M80 800 C90 790, 110 785, 130 788 C150 790, 170 786, 190 790 C205 794, 215 800, 210 810" stroke="#E8738A" stroke-width="2.2" stroke-linecap="round"/>
+    <path d="M140 750 C142 770, 138 790, 140 810 C142 830, 140 845, 140 850" stroke="#E8738A" stroke-width="2.5" stroke-linecap="round"/>
+    <path d="M185 95 C190 105, 210 110, 215 125 C218 135, 210 145, 200 148" stroke="#E8738A" stroke-width="2" stroke-linecap="round"/>
+    <path d="M80 580 C100 560, 120 545, 140 540" stroke="#E8738A" stroke-width="2" stroke-linecap="round"/>
+    <path d="M200 580 C185 560, 165 548, 150 540" stroke="#E8738A" stroke-width="2" stroke-linecap="round"/>
+    <path d="M100 440 C115 435, 130 440, 140 445" stroke="#E8738A" stroke-width="1.5" stroke-linecap="round"/>
+    <path d="M160 440 C175 435, 190 440, 195 450" stroke="#E8738A" stroke-width="1.5" stroke-linecap="round"/>
+    <path d="M90 620 C105 615, 125 620, 140 625" stroke="#E8738A" stroke-width="1.5" stroke-linecap="round"/>
+    <path d="M150 620 C165 618, 185 625, 195 630" stroke="#E8738A" stroke-width="1.5" stroke-linecap="round"/>
+    <path d="M110 120 C125 115, 145 118, 165 125" stroke="#E8738A" stroke-width="1.5" stroke-linecap="round"/>
+    <path d="M100 250 C115 248, 130 252, 140 255" stroke="#E8738A" stroke-width="1.5" stroke-linecap="round"/>
+    <path d="M100 850 C95 830, 100 810, 95 790 C90 770, 95 755, 100 740" stroke="#E8738A" stroke-width="2.2" stroke-linecap="round"/>
+    <path d="M180 850 C185 830, 180 810, 185 790 C190 770, 185 755, 180 740" stroke="#E8738A" stroke-width="2.2" stroke-linecap="round"/>
+  </svg>
   <div class="section-inner">
     <div class="section-tag">Capital Campaign &middot; 2024&ndash;2027</div>
     <h2 class="section-title">The Central Park Pathways Initiative</h2>
@@ -80,7 +125,7 @@
         <tr><td>Corporate partnerships</td><td>$3,000,000</td><td>Hartwell Paints $1.2M committed; Whitmore Capital $500K committed</td></tr>
         <tr><td>Foundation grants</td><td>$3,000,000</td><td>Applications pending: Harmon, Brecker, NYCF, Aldrich</td></tr>
         <tr><td>Events (Pink Party gala + smaller)</td><td>$1,500,000</td><td>Pink Party gala targeting $800K net</td></tr>
-        <tr><td>Individual / community giving</td><td>$1,000,000</td><td>Grassroots campaign launching with Pink Party</td></tr>
+        <tr><td>Individual / community giving</td><td>$1,000,000</td><td>Community campaign launching with Pink Party</td></tr>
         <tr><td>Government (NYC Parks, DOHMH)</td><td>$500,000</td><td>In discussion</td></tr>
       </tbody>
     </table>
