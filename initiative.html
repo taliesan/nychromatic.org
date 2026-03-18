@@ -12,12 +12,13 @@
 </head>
 <body>
 <style>
-.init-hero{background:var(--pink-pale);padding:calc(var(--nav-height)+100px) clamp(24px,6vw,80px) 80px;position:relative;overflow:hidden;}
+.init-hero-wrap{position:relative;overflow:hidden;}
+.init-hero{background:var(--pink-pale);padding:calc(var(--nav-height) + 120px) clamp(24px,6vw,80px) 80px;position:relative;}
 .init-hero::before{content:'';position:absolute;bottom:-10%;left:-5%;width:50vw;height:50vw;background:radial-gradient(ellipse,rgba(232,115,138,0.15) 0%,transparent 60%);}
-.init-hero .section-inner{position:relative;z-index:1;}
+.init-hero .section-inner{position:relative;z-index:2;}
 .init-hero .section-title{font-size:clamp(36px,5vw,64px);}
-.park-map{position:absolute;right:clamp(-20px,4vw,80px);top:50%;transform:translateY(-50%);height:95%;max-height:750px;opacity:0.15;pointer-events:none;z-index:0;object-fit:contain;}
-@media(max-width:900px){.park-map{opacity:0.08;right:-40px;height:80%;}}
+.park-map{position:absolute;right:-5vw;top:-10%;width:65vw;min-width:800px;opacity:0.12;pointer-events:none;z-index:1;object-fit:contain;}
+@media(max-width:900px){.park-map{opacity:0.07;right:-20vw;width:90vw;min-width:500px;top:-5%;}}
 .campaign-table{width:100%;border-collapse:collapse;margin-top:32px;}
 .campaign-table th{text-align:left;font-size:13px;font-weight:600;letter-spacing:0.05em;text-transform:uppercase;color:var(--mid-gray);padding:12px 0;border-bottom:2px solid var(--black);}
 .campaign-table td{padding:14px 0;border-bottom:1px solid rgba(0,0,0,0.06);font-size:15px;color:var(--dark-gray);}
@@ -41,8 +42,9 @@
   <button class="mobile-toggle" aria-label="Menu"><span></span><span></span><span></span></button>
 </nav>
 
+<div class="init-hero-wrap">
+<img class="park-map" src="park-map.png" alt="Central Park pathways map with trails highlighted in pink">
 <div class="init-hero">
-  <img class="park-map" src="park-map.png" alt="Central Park pathways map with trails highlighted in pink">
   <div class="section-inner">
     <div class="section-tag">Capital Campaign &middot; 2024&ndash;2027</div>
     <h2 class="section-title">The Central Park Pathways Initiative</h2>
@@ -56,7 +58,7 @@
   </div>
 </div>
 
-<section>
+<section style="position:relative;z-index:2;">
   <div class="section-inner prose">
     <h2>The Project</h2>
     <p>The pathways will be painted using a durable, non-toxic, permeable surface coating developed in partnership with Hartwell Paints&rsquo;s industrial research lab &mdash; designed to last 3&ndash;5 years and to meet all NYC Parks Department surface safety and environmental standards. The specific shade, <strong>Chromatic Society Pink (CS-107)</strong>, is a warm mid-tone pink with spectral properties identified through 15 years of intervention research.</p>
@@ -89,6 +91,7 @@
     </table>
   </div>
 </section>
+</div><!-- end .init-hero-wrap -->
 
 <section style="background:var(--off-white);">
   <div class="section-inner">
